@@ -536,6 +536,10 @@ p {
     gap: 16px;
 } 
 
+.footer-social {
+    margin-right: 80px;
+}
+
 .footer-social .title {
     color: var(--primary-white-color);
     font-weight: 500;
@@ -556,6 +560,58 @@ p {
 .footer-social .link:focus {
     background-color: var(--links-hover-color-footer);
 }
+
+.subscribe .text {
+    margin-bottom: 16px;
+}
+
+.subscribe .mail {
+    padding: 8px 16px;
+    margin-right: 24px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
+
+    background: var(--title-text-color);
+
+    border: 1px solid var(--primary-white-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.subscribe .mail::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
+}
+
+.subscribe .button {
+    display: inline-flex; 
+    align-items: center;  
+    gap: 16px;
+    padding: 8px 24px;
+    /* width: 169px;
+    height: 56px; */
+    
+    background: var(--links-text-color);
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primary-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    
+    cursor: pointer;
+}
+
+
 
 /* Portfolio */
 
@@ -784,6 +840,10 @@ p {
 .modal .form {
     display: flex;
     flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.117;
+    letter-spacing: 0.04em;
 }
 .form .form-field {
     display: flex;
@@ -805,21 +865,16 @@ p {
 
 }
 
-.modal .form-field-label {
-    /* font-family: 'Roboto'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+.form .form-field-label {
     color:#8E8F99;
 }
 
-.modal .form-field-label::placeholder {
+.form .form-field-input::placeholder {
     color: rgba(46, 47, 66, 0.4);
+
 }
 
-.modal .form-field-input {
+.form .form-field-input {
     padding: 8px 16px;
 
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -831,6 +886,8 @@ textarea {
 }
 
 .modal .submit {
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding: 16px 32px;
@@ -838,10 +895,19 @@ textarea {
     height: 56px;
 
     background: var(--links-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     color: var(--primary-white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border:none;
 
     cursor: pointer;
+}
+
+.form .checkbox-accept {
+    margin-bottom: 24px;
+    color: #8E8F99;
 }

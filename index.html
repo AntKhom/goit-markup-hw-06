@@ -435,6 +435,15 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="text">Subscribe</p>
+          <input type="mail" class="mail" placeholder="E-mail" />
+          <button class="button">
+            Subscribe<svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
     <!-- Modal -->
@@ -474,8 +483,15 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <button class="submit">Send</button>
+          <div class="checkbox-accept">
+            <input type="checkbox" id="check" />
+            <label for="check"
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
+          </div>
         </form>
+        <button class="submit">Send</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
