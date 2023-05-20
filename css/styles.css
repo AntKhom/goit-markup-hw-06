@@ -992,11 +992,11 @@ p {
 }
 
 .checkbox:checked + .label .icon {
-    border-color: var(--links-hover-color);
     background-color: var(--links-hover-color);
-    fill: var(--primary-white-color);
-
     border: none;
+    fill: var(--primary-white-color);
+    border-color: var(--links-hover-color);
+
 }
 
 .accept .link {
