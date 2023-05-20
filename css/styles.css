@@ -903,6 +903,10 @@ p {
     display: flex;
 }
 
+.form-field.comment {
+    margin-bottom: 16px;
+}
+
 .form-field .input{
     height: 40px;
     width: 100%;
@@ -971,14 +975,14 @@ p {
     margin-right: 8px;
     width: 16px;
     height: 16px;
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--title-text-color);
     border-radius: 2px;
 
     fill:transparent;
 
 }
 
-.vissualy-hidden {
+.visualy-hidden {
     -webkit-appearance: none;
         /* remove default appearance on Webkit-based browsers */
     -moz-appearance: none;
@@ -991,10 +995,12 @@ p {
     border-color: var(--links-hover-color);
     background-color: var(--links-hover-color);
     fill: var(--primary-white-color);
+
+    border: none;
 }
 
 .accept .link {
-    color: var(--links-hover-color)
+    color: var(--links-text-color)
 }
 
 .modal .submit {
