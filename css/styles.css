@@ -862,8 +862,6 @@ p {
     letter-spacing: 0.04em;
 }
 .form .form-field {
-    position: relative;
-
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
@@ -901,7 +899,9 @@ p {
 }
 
 .form .form-input {
+    position: relative;
     display: flex;
+    width: 100%;
     padding: 8px 16px 8px 38px;
 
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -920,12 +920,13 @@ p {
     position: absolute;
     top: 50%;
     left: 16px;
+    transform: translateY(-50%);
 
     fill:var(--title-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form .form-input:focus+ .form-icon {
+.form .form-input:focus .form-icon {
     fill: var(--links-text-color);
 }
 
