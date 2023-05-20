@@ -917,25 +917,37 @@ p {
 }
 
 .accept .label {
-    display: inline-block;
-    outline: 1px solid teal;
+    display: flex;
+    align-items: center;
+    /* outline: 1px solid teal; */
 }
 
 .accept .icon {
     display: inline-block;
+    margin-right: 8px;
     width: 16px;
     height: 16px;
     border: 1px solid #8E8F99;
-    border-radius: 4px;
+    border-radius: 2px;
 
 }
 
-.checkbox:checked .icon {
+.checkbox {
+    -webkit-appearance: none;
+        /* remove default appearance on Webkit-based browsers */
+    -moz-appearance: none;
+        /* remove default appearance on Mozilla-based browsers */
+    appearance: none;
+    /* remove default appearance on all other browsers */
+}
+
+.checkbox:checked + .icon {
+    border-color: var(--links-hover-color);
     background-color: var(--links-hover-color);
-    background-image: url(../images/icons.svg#icon-property);
-    background-size: content;
+    background-image: url(../images/icon-property.svg);
+    background-size: cover;
+    /* background-origin: content-box; */
 }
-
 
 
 
