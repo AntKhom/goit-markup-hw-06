@@ -875,17 +875,17 @@ p {
 .modal .title {
     margin-bottom: 16px;
 
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
 
+
 }
 
 .form .form-label {
-    display: flex;
-    flex-direction: column;
     color:#8E8F99;
     margin-bottom: 4px;
     
@@ -901,6 +901,7 @@ p {
 }
 
 .form .form-input {
+    display: flex;
     padding: 8px 16px 8px 38px;
 
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -917,7 +918,7 @@ p {
 
 .form .form-icon {
     position: absolute;
-    bottom: 11px;
+    top: 50%;
     left: 16px;
 
     fill:var(--title-text-color);
