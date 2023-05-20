@@ -568,6 +568,8 @@ p {
 .subscribe .mail {
     padding: 8px 16px;
     margin-right: 24px;
+    height: 40px;
+    width: 264px;
 
     font-weight: 400;
     font-size: 12px;
