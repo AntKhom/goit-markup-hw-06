@@ -913,8 +913,7 @@ p {
     background-color: transparent;
     outline: transparent;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms var(--time-function);
 }
 
 .form-field .input:focus {
@@ -928,7 +927,7 @@ p {
     transform: translateY(-50%);
 
     fill:var(--title-text-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--time-function);
 }
 
 .form-field .input:focus+.form-icon {
@@ -940,31 +939,46 @@ p {
     resize: none;
     padding-left: 16px;
 
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+
+    transition: border-color 250ms var(--time-function);    
 }
 
 .form .accept {
-    margin-top: 16px;
     margin-bottom: 24px;
     color: #8E8F99;
 }
 
 .accept .label {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
+    color: #8E8F99;
     /* outline: 1px solid teal; */
 }
 
 .accept .icon {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     margin-right: 8px;
     width: 16px;
     height: 16px;
     border: 1px solid #8E8F99;
     border-radius: 2px;
 
+    fill:transparent;
+
 }
 
-.checkbox {
+.vissualy-hidden {
     -webkit-appearance: none;
         /* remove default appearance on Webkit-based browsers */
     -moz-appearance: none;
@@ -973,15 +987,15 @@ p {
     /* remove default appearance on all other browsers */
 }
 
-.checkbox:checked + .icon {
+.checkbox:checked + .label .icon {
     border-color: var(--links-hover-color);
     background-color: var(--links-hover-color);
-    background-image: url(../images/icon-property.svg);
-    background-size: cover;
-    /* background-origin: content-box; */
+    fill: var(--primary-white-color);
 }
 
-
+.accept .link {
+    color: var(--links-hover-color)
+}
 
 .modal .submit {
     display: flex;
@@ -994,14 +1008,24 @@ p {
 
     background: var(--links-text-color);
 
+    font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.04em;
     color: var(--primary-white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border:none;
 
     cursor: pointer;
+
+    transition: background-color 250ms var(--time-function);
+
+}
+
+.modal .submit:hover,
+.modal .submit:focus {
+    background-color: var(--links-hover-color);
 }
 
